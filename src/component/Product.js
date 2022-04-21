@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { alignPropType } from 'react-bootstrap/esm/types';
-import { Link } from 'react-router-dom';
 
 const Product = () => {
   const [name, setName] = useState('');
@@ -58,42 +56,42 @@ const Product = () => {
             continue providing great products and helps potential buyers to make
             confident decisions.
           </p>
-          <Link
-            class="btn btn-dark"
+          <a
+            className="btn btn-dark"
             data-bs-toggle="modal"
-            to="#exampleModalToggle"
+            href="#exampleModalToggle"
             role="button"
           >
             FeedBack
-          </Link>
+          </a>
         </div>
       </div>
       <div
-        class="modal fade"
+        className="modal fade"
         id="exampleModalToggle"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1"
+        tabIndex="-1"
       >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalToggleLabel">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalToggleLabel">
                 Give Feedback
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               <div className="container my-3 ">
                 <form id="myForm">
                   <legend>Submit Comment</legend>
                   <div className="mb-3">
-                    <label for="disabledSelect" className="form-label">
+                    <label htmlFor="disabledSelect" className="form-label">
                       Rating
                     </label>
                     <select
@@ -113,7 +111,7 @@ const Product = () => {
                     </div>
                   </div>
                   <div className="mb-3">
-                    <label for="exampleName" className="form-label">
+                    <label htmlFor="exampleName" className="form-label">
                       Your Name
                     </label>
                     <input
@@ -131,7 +129,7 @@ const Product = () => {
                     </div>
                   </div>
                   <div className="mb-3 ">
-                    <label className="form-check-label" for="exampleCheck1">
+                    <label className="form-check-label" htmlFor="exampleCheck1">
                       Comment
                     </label>
                     <br />
@@ -148,10 +146,10 @@ const Product = () => {
                 </form>
               </div>
             </div>
-            <div class="modal-footer">
+            <div className="modal-footer">
               <button
                 disabled={name.length < 2 || name.length > 15}
-                class="btn btn-success"
+                className="btn btn-success"
                 data-bs-target="#exampleModalToggle2"
                 data-bs-toggle="modal"
               >
@@ -162,34 +160,34 @@ const Product = () => {
         </div>
       </div>
       <div
-        class="modal fade"
+        className="modal fade"
         id="exampleModalToggle2"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel2"
-        tabindex="-1"
+        tabIndex="-1"
       >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalToggleLabel2">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalToggleLabel2">
                 Well hey <b>{name}</b>, Thanks for your Valuable Feedback!
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               <p>"name": {name}</p>
               <p>"Rating": {rating}</p>
               <p>"Comment": {comment}</p>
             </div>
-            <div class="modal-footer">
+            <div className="modal-footer">
               <button
                 type="button"
-                class="btn btn-success"
+                className="btn btn-success"
                 data-bs-dismiss="modal"
                 id="reset"
                 onClick={handleSubmit}
