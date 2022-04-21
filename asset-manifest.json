@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Form-Validaton/static/css/main.3e0da061.css",
+    "main.js": "/Form-Validaton/static/js/main.624a7610.js",
+    "static/js/787.a968c386.chunk.js": "/Form-Validaton/static/js/787.a968c386.chunk.js",
+    "index.html": "/Form-Validaton/index.html",
+    "main.3e0da061.css.map": "/Form-Validaton/static/css/main.3e0da061.css.map",
+    "main.624a7610.js.map": "/Form-Validaton/static/js/main.624a7610.js.map",
+    "787.a968c386.chunk.js.map": "/Form-Validaton/static/js/787.a968c386.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e0da061.css",
+    "static/js/main.624a7610.js"
+  ]
+}
